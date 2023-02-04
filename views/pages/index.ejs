@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Form Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <label class="logo"><img src="images/logo.png"></label>
+        <label class="formname"><input type="text" name="formName" placeholder="Untitled form"> <span> <i
+                    class="fa-regular fa-folder"></i></span><span class="star"><i
+                    class="fa-regular fa-star"></i></span></label>
+
+        <ul>
+            <li><a href=""><i class="fa-solid fa-palette"></i></a></li>
+            <li><a href=""> <i class="fa-regular fa-eye"></i></a></li>
+            <li><a href=""> <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i></a></li>
+            <li><a href=""> <i class="fa-sharp fa-solid fa-arrow-rotate-right"></i></a></li>
+            <li><button type="submit">Sand</button></li>
+            <li><a href=""> <i class="fa-solid fa-ellipsis-vertical" id="dot"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <h5 id="category"> Question&nbsp;&nbsp;&nbsp; Responese&nbsp;&nbsp;&nbsp; Setting</h5>
+    </center>
+    <div class="form">
+        <form id="form" method="post" action="/submitted" onsubmit="validate()">
+            <div class="title-div">
+                <h1>Google Form</h1>
+                <p>This is a Google Form.Fill Your details in This Form Correctly.</p>
+                <p class="required">*Required</p>
+            </div>
+
+            <div class="name-div">
+                <div class="name">What is your name?<span class="required">*</span></div>
+
+                <div class="input-div"><input id="name" type="input" name="name" placeholder="Your answer"></div>
+                <p class="required" id="errorname"></p>
+            </div>
+
+            <div class="college-div">
+                <div class="name">Enter your college name.</div>
+                <div class="input-div"><input type="input" name="collage" placeholder="Your answer"></div>
+
+            </div>
+
+            <div class="gmail-div">
+                <div class="name">Enter your email.<span class="required">*</span></div>
+                <div class="input-div"><input type="input" id="email" name="email" placeholder="Your email"></div>
+                <p class="required" id="erroremail"></p>
+            </div>
+
+            <div class="mobile-div">
+                <div class="name">Enter your mobile no.</div>
+                <div class="input-div"><input type="input" id="phone" name="phone" placeholder="Your answer"></div>
+                <p class="required" id="errorphone"></p>
+            </div>
+
+            <div>
+                <input class="btn" type="submit" value="submit">
+            </div>
+        </form>
+
+        <div class="last-div">
+
+            <p class="never">Never submit passwords through Google Forms.</p>
+            <p class="term">This content is neither created nor endorsed by Google, Report Abuse - Term of Service -
+                Private Policy</p>
+            <h2>Google Forms</h2>
+        </div>
+
+    </div>
+
+        <div class="last-div">
+            <p class="never">Never submit passwords through Google Forms.</p>
+            <p class="term">This content is neither created nor endorsed by Google, Report Abuse - Term of Service -
+                Private Policy</p>
+            <h2>Google Forms</h2>
+        </div>
+
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
