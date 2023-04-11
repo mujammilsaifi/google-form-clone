@@ -13,6 +13,7 @@ mysql.createConnection({
 var app = express();
 app.use(express.static('public'));
 
+// command for run server ->node index.js
 // write on browser localhost:8080
 app.listen(8080);
 
@@ -22,7 +23,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/', function (req, res) {
+    console.log(`server is run on port 8080`);
     res.render('pages/index');
+    
 });
 
 app.post('/submitted', function (req, res) {
